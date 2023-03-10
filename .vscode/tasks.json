@@ -28,7 +28,12 @@
 				"env": {
 					"http_proxy": "${env:http_proxy}",
 					"https_proxy": "${env:https_proxy}"
-				}
+				},
+				"ports": [
+					{
+						"containerPort": 54321
+					}
+				]
 			},
 			"python": {
 				"file": "main.py"
